@@ -1,0 +1,77 @@
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.login-form {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   opacity: 100%;
+   box-shadow:  inset 0 0 10px aqua, 0 0 20px aqua;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: purple;
+  border: rgb(147, 22, 147)  0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em purple;
+  box-shadow: inset 0 0 0.5em 0 purple, 0 0 0.5em 0 purple;
+}
+
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.form-container input:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px 10px rgba(0,255,155,0.7);
+}
+
+.form-container button {
+    background-color:antiquewhite;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+.form-container button:hover {
+    color: var(--main);
+    background-color: cyan;
+    cursor: pointer;
+    box-shadow: cyan 0px  0px 40px;
+}
+
+label {
+    float: left;
+}
+

@@ -1,0 +1,218 @@
+  body{
+    background-color: black; 
+    color: aliceblue;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/843/174/non_2x/phone-wallpaper-with-digital-black-and-green-art-design-with-dark-4k-style-free-vector.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    }
+
+    h2 {  color: chocolate;
+    }
+
+    .ccc {
+        color: bisque;
+        text-align: left;
+    }
+
+    h1 {
+        color: rgb(119, 196, 222);
+        text-shadow: 1px 1px 4px black, 0 0 25px green, 0 0 6px yellow;
+    }
+
+    #how{
+      text-align: left;
+    }
+
+    #why {
+     text-wrap: wrap;
+    }
+
+    #h{
+      text-shadow: 0 0 5px #FF0000, 0 0 7px #0000FF, 0 0 25px #8B0000;
+      text-align: center;
+      color: rgb(166, 197, 103);
+      font-size: 70px;
+      text-decoration: underline;
+      font-family:lucida handwriting;
+    }
+
+    p {
+      text-wrap: balance;
+      width: 400px;
+      font-size: 18px;
+    }
+
+    #w {
+      text-align: center;
+      padding-left: 700px;
+    }
+
+    #v {
+      text-align: center;
+      padding-right: 700px;
+      padding-top: 100px;
+      padding-left: 30px;
+    }
+
+    #s {
+      color: rgb(168, 129, 11);
+      font-size: 40px;
+    }
+
+    #s:hover {
+      color: rgb(33, 203, 14);
+    }
+
+   div {
+    color: antiquewhite;
+   }
+
+   nav{
+    background-color: rgb(21, 18, 18);
+    text-align:between;
+    color: goldenrod;
+    border: 2px solid wheat;
+   }
+
+   nav a{
+    padding: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+   }
+
+   nav a:hover {
+    color: gold;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+   }
+
+   h3 {
+    color: rgb(207, 13, 45);
+    font-size: 20px;
+   }
+
+   #vid {
+    height: 200px;
+    padding-bottom: 120px;
+    padding-top: 40px;
+     } 
+
+   footer a {
+    color: grey;
+   padding-right: 30px;
+   text-decoration: none;
+   }
+
+   #f {
+    border: 2px solid rgb(9, 9, 9);
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgb(1, 1, 14),  black);
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .gallry {
+    display: flexbox;
+    flex-wrap:wrap;
+   font-size: 130px;
+   border: 2px solid black;
+  }
+
+  img{
+    border-radius: 15px;
+  }
+
+ .mm{
+  width: 300px;
+  padding-top: 50px;
+  padding-left: 20px;
+ }
+
+ b{
+  font-size: 24px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ }
+
+ li a{
+  font-size: 18px;
+  color: rgb(186, 181, 181);
+  text-decoration-line: none;
+  list-style-type: none;
+ }
+
+ li a:hover{
+  color: aqua;
+ }
+
+ul{
+  list-style-type: none;
+  line-height: 16px;
+}
+
+#login {
+  background-color: #3ca5eb;
+  margin-left: 90%;
+  margin-bottom:5px;
+  height: 35px;
+  border-radius: 10px;
+  
+}
+
+.search_container {
+  font-family: arial, sans-seriif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  margin: 0;
+  background-color: #f0f0f0;
+
+}
+
+#search_container {
+  position: relative;
+  width: 0px;
+  transition: width 0.3s;
+}
+
+#search_container input {
+width: 100%;
+padding: 10px 0px 0px 0px;
+font-size: 16px;
+border: none;
+border-radius: 20px;
+outline: none;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+#search_container button {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  background: #007bff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+#search_container:hover{
+  width: 150px;
+
+}
+#search_container:hover input {
+  opacity: 1;
+}
+#search_container:hover button {
+  transform: translateY(-50%) rotate(360deg);
+}
