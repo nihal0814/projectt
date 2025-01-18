@@ -13,8 +13,13 @@ h2 {
 }
 
 .ccc {
-    color: bisque;
+    color: rgb(245, 234, 221);
     text-align: left;
+}
+
+#plane {
+    text-align: center;
+    padding-left: 300px;
 }
 
 h1 {
@@ -27,7 +32,7 @@ h1 {
 }
 
 #why {
-    text-wrap: wrap;
+    text-align: right;
 }
 
 #h {
@@ -47,14 +52,12 @@ p {
 
 #w {
     text-align: center;
-    padding-left: 700px;
+    
 }
 
 #v {
     text-align: center;
-    padding-right: 700px;
-    padding-top: 100px;
-    padding-left: 30px;
+   
 }
 
 #s {
@@ -76,18 +79,19 @@ nav {
     color: goldenrod;
     border: 2px solid wheat;
     padding: 10px;
+    height: 55px;
 }
 
 nav a {
     padding: 25px;
     color: antiquewhite;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 nav a:hover {
-    color: gold;
-    font-family: "Gill Sans", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 25px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
 }
 
 h3 {
@@ -99,6 +103,7 @@ h3 {
     height: 200px;
     padding-bottom: 120px;
     padding-top: 40px;
+    
 }
 
 footer a {
@@ -123,10 +128,12 @@ footer a {
     flex-wrap: wrap;
     font-size: 130px;
     border: 2px solid black;
+   
 }
 
 img {
-    border-radius: 15px;
+    border-radius: 25px;
+    padding: 7px;
 }
 
 .mm {
@@ -164,60 +171,50 @@ ul {
     border-radius: 10px;
 }
 
-.search_container {
-    font-family: arial, sans-serif;
+#login:hover {
+        background-color: black;
+        box-shadow: 0 0 10px 10px rgba(0, 255, 255, 0.8), 0 0 20px 20px rgba(0, 255, 255, 0.6);
+        border-radius: 10px;
+      }
+      
+.story {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    height: 10vh;
+    
+}
+#buttonneon{
+      padding: 15px 30px ;
+      font-size: 20px;
+      text-transform: uppercase;
+      background-color: rgb(9, 9, 9);
+      opacity: 70%;
+      border: 2px solid rgb(167, 34, 79);
+      cursor: pointer;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      margin-right: 25px;
+      box-shadow:  0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px cyan, 0 0 30px cyan ;
 }
 
-#search_container {
+#buttonneon a{
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    gap: 15px;
+}
+
+#buttonneon:hover{
+    box-shadow: 0 0 5px #9a1758, 0 0 10px #9a627e, 0 0 15px #b9aab1, 0 0 20px #b18585, 0 0 30px #985b5b, 0 0 50px #9f2020;
+}
+#Italic-walla{
     position: relative;
-    width: 0px;
-    transition: width 0.3s;
-}
-
-#search_container input {
-    width: 100%;
-    padding: 10px 0px 0px 0px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-#search_container button {
-    position: absolute;
-    top: 50%;
-    right: -10px;
-    transform: translateY(-50%);
-    background: #007bff;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-#search_container:hover {
-    width: 150px;
-}
-
-#search_container:hover input {
-    opacity: 1;
-}
-
-#search_container:hover button {
-    transform: translateY(-50%) rotate(360deg);
+    right: 0;
+    margin-left: 70%;
 }
 
 /* Media Queries for responsiveness */
@@ -225,7 +222,7 @@ ul {
 /* Mobile (phones) */
 @media (max-width: 768px) {
     body {
-        background-size: contain;
+        background-size: cover;
     }
 
     #h {
@@ -242,11 +239,15 @@ ul {
     }
 
     nav a {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    #plane {
+        padding-left: 150px;
     }
 
     .gallry {
-        font-size: 60px;
+        font-size: 40px;
         flex-direction: column;
         align-items: center;
     }
@@ -262,7 +263,7 @@ ul {
     }
 
     #w, #v {
-        padding-left: 0;
+        padding-left: 22px;
         padding-right: 0;
     }
 
@@ -271,12 +272,15 @@ ul {
         margin-bottom: 5px;
         height: 30px;
     }
+    #Italic-walla{
+        margin-left: 30%;
+    }
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
     .gallry {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     #h {
@@ -291,6 +295,10 @@ ul {
         padding: 15px;
     }
 
+    #plane {
+        padding-left: 200px;
+    }
+
     .mm {
         width: 40%;
     }
@@ -303,7 +311,7 @@ ul {
 /* Large Desktop */
 @media (min-width: 1200px) {
     .gallry {
-        font-size: 150px;
+        font-size: 100px;
     }
 
     #h {
@@ -316,6 +324,10 @@ ul {
 
     nav {
         padding: 20px;
+    }
+
+    #plane {
+        padding-left: 500px;
     }
 
     .mm {
